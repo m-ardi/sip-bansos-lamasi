@@ -147,7 +147,14 @@ database.default.port = 3306
 
 Buka terminal di dalam folder proyek dan jalankan secara berurutan:
 
-### Langkah 1 — Buat Tabel (Migrasi)
+### Langkah 1 - Menginstal Depedencies
+
+```bash
+composer install --ignore-platform-reqs 
+```
+
+
+### Langkah 2 — Buat Tabel (Migrasi)
 
 ```bash
 php spark migrate
@@ -160,7 +167,7 @@ Perintah ini membuat semua tabel secara otomatis:
 - `pengajuan_bantuan` — Data pengajuan bantuan
 - `penyaluran_bantuan` — Realisasi penyaluran bantuan
 
-### Langkah 2 — Isi Data Awal (Seeder)
+### Langkah 3 — Isi Data Awal (Seeder)
 
 ```bash
 php spark migrate:refresh && php spark db:seed DatabaseSeeder /
