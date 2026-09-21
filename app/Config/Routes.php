@@ -5,12 +5,21 @@ use CodeIgniter\Router\RouteCollection;
 /** @var RouteCollection $routes */
 
 // ================================================================
+// PUBLIC ROUTES (Landing Page & Profil Desa - Tanpa Auth)
+// ================================================================
+$routes->get('/', 'Beranda::index');
+$routes->get('profil', 'Beranda::profil');
+$routes->get('kependudukan', 'Beranda::kependudukan');
+$routes->get('pendidikan', 'Beranda::pendidikan');
+$routes->get('kesehatan', 'Beranda::kesehatan');
+$routes->get('pertanian', 'Beranda::pertanian');
+
+// ================================================================
 // PUBLIC ROUTES (Auth)
 // ================================================================
-$routes->get('/', 'Auth::login');
-$routes->get('/login', 'Auth::login');
-$routes->post('/login', 'Auth::doLogin');
-$routes->get('/logout', 'Auth::logout');
+$routes->get('login', 'Auth::login');
+$routes->post('login', 'Auth::doLogin');
+$routes->get('logout', 'Auth::logout');
 
 // ================================================================
 // PROTECTED ROUTES (Harus Login)

@@ -1,0 +1,27 @@
+<?= $this->extend('layouts/publik') ?>
+
+<?= $this->section('content') ?>
+    <div class="bg-slate-900 text-white py-12 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 lg:px-12">
+            <nav class="flex items-center gap-2 text-xs font-mono text-emerald-400 mb-4">
+                <a href="<?= base_url() ?>" class="hover:underline flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">home</span> Beranda
+                </a>
+                <span>/</span>
+                <span class="text-slate-300">Pendidikan</span>
+            </nav>
+            <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-tight">Sarana &amp; Fasilitas Pendidikan</h1>
+            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
+                Ekosistem pendidikan berkualitas dari jenjang usia dini, dasar, hingga menengah atas dan kejuruan vokasi di Lamasi.
+            </p>
+        </div>
+    </div>
+
+    <section class="py-16 border-b border-slate-100 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-12">
+            <?= $this->include('publik/sections/pendidikan') ?>
+        </div>
+    </section>
+
+    <?= $this->include('publik/sections/cta_login') ?>
+<?= $this->endSection() ?>
