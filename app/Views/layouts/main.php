@@ -164,7 +164,7 @@
                 <a href="<?= base_url('dashboard') ?>" class="flex items-center gap-3">
                     <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo LamasiBantu" class="h-10 w-10 object-contain rounded-xl bg-white p-0.5 shadow-sm shrink-0 border border-white/20" />
                     <div class="flex flex-col">
-                        <span class="font-headline-sm text-[17px] font-bold tracking-tight text-white leading-none">LamasiBantu</span>
+                        <span class="font-headline-sm text-[17px] font-bold tracking-tight text-white leading-none">Lamasi</span>
                         <span class="font-label-sm text-[10px] text-on-tertiary-container uppercase tracking-wider mt-1">SIP-BANSOS LAMASI</span>
                     </div>
                 </a>
@@ -258,7 +258,7 @@
 
                 <div class="hidden sm:flex flex-col">
                     <span class="font-label-md text-label-md text-text-primary leading-tight font-bold">
-                        SIP-BANSOS • Kelurahan Lamasi
+                        Kelurahan Lamasi
                     </span>
                     <span class="font-body-sm text-[11px] text-text-muted leading-tight mt-0.5">
                         <?= date('l, d F Y') ?> • Kab. Luwu
