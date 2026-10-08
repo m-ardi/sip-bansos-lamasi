@@ -121,7 +121,7 @@ Buka file `.env` dengan teks editor (Notepad, VS Code, dll.) dan sesuaikan:
 CI_ENVIRONMENT = development
 
 # Sesuaikan URL dengan nama folder proyek Anda
-app.baseURL = 'http://localhost/sistem-bansos-kelurahan-lamasi/public/'
+app.baseURL = 'http://localhost:8080/'
 
 # Konfigurasi koneksi database
 database.default.hostname = localhost
